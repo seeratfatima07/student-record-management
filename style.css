@@ -1,0 +1,267 @@
+/* ---------- General ---------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f4f8;
+  color: #222;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #1f3a5f;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 1.15rem;
+  color: #1f3a5f;
+  margin-bottom: 16px;
+}
+
+
+/* ---------- Cards ---------- */
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ---------- AI Card ---------- */
+
+.ai-card {
+  border-top: 4px solid #6c5ce7;
+}
+
+.ai-help {
+  color: #666;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+#ai-prompt {
+  width: 100%;
+  min-height: 95px;
+  resize: vertical;
+
+  padding: 12px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+
+  border: 1px solid #b8c0cc;
+  border-radius: 5px;
+
+  margin-bottom: 12px;
+}
+
+#ai-prompt:focus {
+  outline: none;
+  border-color: #6c5ce7;
+  box-shadow: 0 0 0 2px rgba(108, 92, 231, 0.18);
+}
+
+.btn-ai {
+  background-color: #6c5ce7;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.btn-ai:hover {
+  background-color: #5848c2;
+}
+
+.btn-ai:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+
+/* ---------- Form ---------- */
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #b8c0cc;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus {
+  outline: none;
+  border-color: #2f6fd6;
+  box-shadow: 0 0 0 2px rgba(47, 111, 214, 0.2);
+}
+
+
+/* ---------- Messages ---------- */
+
+.message {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  min-height: 1.2em;
+}
+
+.message.error {
+  color: #c0392b;
+}
+
+.message.success {
+  color: #1e8449;
+}
+
+
+/* ---------- Buttons ---------- */
+
+.btn {
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #2f6fd6;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.btn-primary:hover {
+  background-color: #2459ad;
+}
+
+.btn-edit {
+  background-color: #e69500;
+}
+
+.btn-edit:hover {
+  background-color: #c27e00;
+}
+
+.btn-delete {
+  background-color: #d64541;
+}
+
+.btn-delete:hover {
+  background-color: #b3322e;
+}
+
+.btn-save {
+  background-color: #1e8449;
+}
+
+.btn-save:hover {
+  background-color: #166a3a;
+}
+
+.btn-cancel {
+  background-color: #6c757d;
+}
+
+.btn-cancel:hover {
+  background-color: #545b62;
+}
+
+
+/* ---------- Table ---------- */
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 480px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #dde2ea;
+}
+
+th {
+  background-color: #1f3a5f;
+  color: #ffffff;
+}
+
+tbody tr:hover {
+  background-color: #f5f8fc;
+}
+
+td input {
+  width: 100%;
+  padding: 6px;
+  font-size: 0.95rem;
+  border: 1px solid #b8c0cc;
+  border-radius: 4px;
+}
+
+.actions {
+  white-space: nowrap;
+}
+
+.actions .btn {
+  margin-right: 4px;
+}
+
+.empty-row {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
+
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 600px) {
+
+  body {
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 14px;
+  }
+
+  .btn-primary,
+  .btn-ai {
+    width: 100%;
+  }
+}

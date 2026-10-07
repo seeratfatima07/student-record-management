@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Record Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Student Record Management</h1>
+
+    <!-- ================= AI SECTION ================= -->
+    <section class="card ai-card">
+
+      <h2>✨ Run AI Command</h2>
+
+      <p class="ai-help">
+        Describe the student record in natural language.
+      </p>
+
+      <textarea
+        id="ai-prompt"
+        placeholder="Example: Add Ali, show Ali's record, update Ali's phone number, or delete Ali"
+      ></textarea>
+
+      <button
+        type="button"
+        id="ai-create-btn"
+        class="btn btn-ai"
+      >
+        Run AI Command
+      </button>
+
+      <p id="ai-message" class="message"></p>
+
+    </section>
+
+
+    <!-- ================= MANUAL CREATE ================= -->
+    <section class="card">
+
+      <h2>Add New Record</h2>
+
+      <form id="record-form">
+
+        <div class="form-group">
+
+          <label for="full-name">
+            Full Name
+          </label>
+
+          <input
+            type="text"
+            id="full-name"
+            placeholder="Enter full name"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="phone-number">
+            Phone Number
+          </label>
+
+          <input
+            type="tel"
+            id="phone-number"
+            placeholder="Enter phone number"
+            required
+          >
+
+        </div>
+
+
+        <button
+          type="submit"
+          class="btn btn-primary"
+        >
+          Add Record
+        </button>
+
+      </form>
+
+      <p id="message" class="message"></p>
+
+    </section>
+
+
+    <!-- ================= RECORD TABLE ================= -->
+    <section class="card">
+
+      <h2>Saved Records</h2>
+
+      <div class="table-wrapper">
+
+        <table>
+
+          <thead>
+
+            <tr>
+              <th>ID</th>
+              <th>Full Name</th>
+              <th>Phone Number</th>
+              <th>Actions</th>
+            </tr>
+
+          </thead>
+
+
+          <tbody id="records-body">
+
+            <!-- Records inserted by script.js -->
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
